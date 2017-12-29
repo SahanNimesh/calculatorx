@@ -5,48 +5,61 @@
     <title>calculator</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-    <form name="calcform" class="w3-container w3-card-4 w3-light-grey">
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+    <form name="calcform" class="w3-container w3-card-4 w3-light-grey calc-body">
         <center>
             <table width="30%">
                 <tr>
                     <td colspan="4">
-                        <center><input class="w3-input w3-border w3-round-large" type="text" name="calc_output_name" id="calc_output" style="text-align: right;"/></center>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="btn7" value="7" onclick="displaynum(btn7.value);" /></td>
-                    <td><input type="button" name="btn8" value="8" onclick="displaynum(btn8.value);" /></td>
-                    <td><input type="button" name="btn9" value="9" onclick="displaynum(btn9.value);" /></td>
-                    <td><input type="button" name="addbtn" value="+" onclick="displaynum(addbtn.value);" /></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="btn4" value="4" onclick="displaynum(btn4.value);" /></td>
-                    <td><input type="button" name="btn5" value="5" onclick="displaynum(btn5.value);" /></td>
-                    <td><input type="button" name="btn6" value="6" onclick="displaynum(btn6.value);" /></td>
-                    <td><input type="button" name="subbtn" value="-" onclick="displaynum(subbtn.value);" /></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="btn1" value="1" onclick="displaynum(btn1.value);" /></td>
-                    <td><input type="button" name="btn2" value="2" onclick="displaynum(btn2.value);" /></td>
-                    <td><input type="button" name="btn3" value="3" onclick="displaynum(btn3.value);" /></td>
-                    <td><input type="button" name="mulbtn" value="*" onclick="displaynum(mulbtn.value);" /></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="btn0" value="0" onclick="displaynum(btn0.value);" /></td>
-                    <td><input type="button" name="zerobtn" value="." onclick="displaynum(zerobtn.value);" /></td>
-                    <td><input type="button" name="eqbtn" value="=" onclick="calc_output.value=eval(calc_output_name.value)" /></td>
-                    <td><input type="button" name="divbtn" value="/" onclick="displaynum(divbtn.value);" /></td>
-                </tr>
-            </table>
+                        <input class="w3-input w3-border w3-round-large" type="text" name="calc_output_name" id="calc_output" style="text-align: right;" /></center>
+        </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn7" value="7" onclick="displaynum(btn7.value);" /></td>
+            <td><input type="button" name="btn8" value="8" onclick="displaynum(btn8.value);" /></td>
+            <td><input type="button" name="btn9" value="9" onclick="displaynum(btn9.value);" /></td>
+            <td><input type="button" name="addbtn" value="+" onclick="displaynum(addbtn.value);" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn4" value="4" onclick="displaynum(btn4.value);" /></td>
+            <td><input type="button" name="btn5" value="5" onclick="displaynum(btn5.value);" /></td>
+            <td><input type="button" name="btn6" value="6" onclick="displaynum(btn6.value);" /></td>
+            <td><input type="button" name="subbtn" value="-" onclick="displaynum(subbtn.value);" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn1" value="1" onclick="displaynum(btn1.value);" /></td>
+            <td><input type="button" name="btn2" value="2" onclick="displaynum(btn2.value);" /></td>
+            <td><input type="button" name="btn3" value="3" onclick="displaynum(btn3.value);" /></td>
+            <td><input type="button" name="mulbtn" value="*" onclick="displaynum(mulbtn.value);" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn0" value="0" onclick="displaynum(btn0.value);" /></td>
+            <td><input type="button" name="zerobtn" value="." onclick="displaynum(zerobtn.value);" /></td>
+            <td><input type="button" name="eqbtn" value="=" onclick="calc_output.value=eval(calc_output_name.value)" /></td>
+            <td><input type="button" name="divbtn" value="/" onclick="displaynum(divbtn.value);" /></td>
+        </tr>
+        </table>
 
         </center>
     </form>
     <script src="js/calculator.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
 
 </html>
