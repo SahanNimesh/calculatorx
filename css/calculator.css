@@ -1,3 +1,8 @@
+
+body {
+	margin: auto;
+}
+
 input{
 	width: 100%;
 	height: 50px;
@@ -5,3 +10,10 @@ input{
 input[type="button"]{
 	border-radius: 20%;
 }
+
+.calc-body {
+	max-width: 30rem;
+	margin: auto;
+	margin-top: 6em;
+}
+

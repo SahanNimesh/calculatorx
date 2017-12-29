@@ -11,11 +11,12 @@
 
 <body>
 
-
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
+    <div class="card text-white bg-dark mb-3 calc-body">
+        <div class="card-header"><b>CalculatorX</b> v.1.0</div>
         <div class="card-body">
-            <h5 class="card-title">Dark card title</h5>
+            <h5 class="card-title">
+                <input class="w3-input w3-border w3-round-large" type="text" name="calc_output_name" id="calc_output" style="text-align: right;" readonly>
+            </h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
@@ -25,34 +26,34 @@
             <table width="30%">
                 <tr>
                     <td colspan="4">
-                        <input class="w3-input w3-border w3-round-large" type="text" name="calc_output_name" id="calc_output" style="text-align: right;" /></center>
-        </td>
-        </tr>
-        <tr>
-            <td><input type="button" name="btn7" value="7" onclick="displaynum(btn7.value);" /></td>
-            <td><input type="button" name="btn8" value="8" onclick="displaynum(btn8.value);" /></td>
-            <td><input type="button" name="btn9" value="9" onclick="displaynum(btn9.value);" /></td>
-            <td><input type="button" name="addbtn" value="+" onclick="displaynum(addbtn.value);" /></td>
-        </tr>
-        <tr>
-            <td><input type="button" name="btn4" value="4" onclick="displaynum(btn4.value);" /></td>
-            <td><input type="button" name="btn5" value="5" onclick="displaynum(btn5.value);" /></td>
-            <td><input type="button" name="btn6" value="6" onclick="displaynum(btn6.value);" /></td>
-            <td><input type="button" name="subbtn" value="-" onclick="displaynum(subbtn.value);" /></td>
-        </tr>
-        <tr>
-            <td><input type="button" name="btn1" value="1" onclick="displaynum(btn1.value);" /></td>
-            <td><input type="button" name="btn2" value="2" onclick="displaynum(btn2.value);" /></td>
-            <td><input type="button" name="btn3" value="3" onclick="displaynum(btn3.value);" /></td>
-            <td><input type="button" name="mulbtn" value="*" onclick="displaynum(mulbtn.value);" /></td>
-        </tr>
-        <tr>
-            <td><input type="button" name="btn0" value="0" onclick="displaynum(btn0.value);" /></td>
-            <td><input type="button" name="zerobtn" value="." onclick="displaynum(zerobtn.value);" /></td>
-            <td><input type="button" name="eqbtn" value="=" onclick="calc_output.value=eval(calc_output_name.value)" /></td>
-            <td><input type="button" name="divbtn" value="/" onclick="displaynum(divbtn.value);" /></td>
-        </tr>
-        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn7" value="7" onclick="displaynum(btn7.value);" /></td>
+                    <td><input type="button" name="btn8" value="8" onclick="displaynum(btn8.value);" /></td>
+                    <td><input type="button" name="btn9" value="9" onclick="displaynum(btn9.value);" /></td>
+                    <td><input type="button" name="addbtn" value="+" onclick="displaynum(addbtn.value);" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn4" value="4" onclick="displaynum(btn4.value);" /></td>
+                    <td><input type="button" name="btn5" value="5" onclick="displaynum(btn5.value);" /></td>
+                    <td><input type="button" name="btn6" value="6" onclick="displaynum(btn6.value);" /></td>
+                    <td><input type="button" name="subbtn" value="-" onclick="displaynum(subbtn.value);" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn1" value="1" onclick="displaynum(btn1.value);" /></td>
+                    <td><input type="button" name="btn2" value="2" onclick="displaynum(btn2.value);" /></td>
+                    <td><input type="button" name="btn3" value="3" onclick="displaynum(btn3.value);" /></td>
+                    <td><input type="button" name="mulbtn" value="*" onclick="displaynum(mulbtn.value);" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn0" value="0" onclick="displaynum(btn0.value);" /></td>
+                    <td><input type="button" name="zerobtn" value="." onclick="displaynum(zerobtn.value);" /></td>
+                    <td><input type="button" name="eqbtn" value="=" onclick="calc_output.value=eval(calc_output_name.value)" /></td>
+                    <td><input type="button" name="divbtn" value="/" onclick="displaynum(divbtn.value);" /></td>
+                </tr>
+            </table>
 
         </center>
     </form>
